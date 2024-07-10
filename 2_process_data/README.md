@@ -3,7 +3,7 @@ Nextflow pipeline to download and process microbial RNA-seq data from NCBI SRA
 
 ## Setup
 1. Create the environment with all the requirements with the `nextflow_environment.yaml` file:
-    1. `conda env create -f nextflow_environment.yaml --name nextflow`
+    1. `conda env create -f nextflow_environment.yml --name nextflow`
 1. Install [Docker](https://docs.docker.com/get-docker/)
 1. Prepare the metadata file for your dataset. Use the [download metadata script](../0_download_metadata) to get all metadata for a specified organism. To append local data, you can add new rows to the tsv file and fill out the following columns:
     1. `Experiment`: For public data, this is your SRX ID. For local data, data should be named with a standardized ID (e.g. ecoli_0001)
